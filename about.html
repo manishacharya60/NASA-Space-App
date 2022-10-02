@@ -32,6 +32,13 @@
     <link rel="shortcut icon" href="images/logo.jpg" />
 
     <style>
+      .content-holder {
+        width: 50%;
+        background: #e8eaf66f;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
       .collection {
         border: none;
       }
@@ -43,7 +50,13 @@
       }
 
       .collection .collection-item .title {
-        color: #fafafa;
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+        font-family: "Poppins";
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        color: #e0e0e0;
         text-align: left;
       }
     </style>
@@ -52,6 +65,12 @@
   <body>
     <!-- title -->
     <div id="particles-js"></div>
+    <a
+      style="position: fixed; top: 20px; left: 20px"
+      class="back-btn btn-floating btn-large waves-effect waves-light teal"
+      href="index.html"
+      ><i class="material-icons">arrow_back</i></a
+    >
     <div class="row container">
       <div class="col l12 col s12 col m10 offset-m1">
         <div class="title">
