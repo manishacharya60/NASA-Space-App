@@ -1,15 +1,18 @@
 /* Docs sample */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@800&family=Poppins:wght@300&display=swap');
 
 body{
 	margin:0;
 	padding:0;
+	overflow-x: hidden;
+	background-color: #232741;
 }
 
 #particles-js {
 	position: absolute;
 	width: 100%;
-	background-color: #232741;
-	height: 100%;
+	
+	height: 100vh;
   }
 
 #canvas{
@@ -178,5 +181,209 @@ body{
 	text-decoration: none;
 	cursor:pointer;
 	-webkit-border-image: url(../pics/tab-hover.png) 5 20 5 20 repeat stretch;
-
 }
+
+/* title */
+.title {
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	font-family: "Josefin Sans";
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	color: #e0e0e0;
+  }
+  
+  .login-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
+  .divider{
+	  width: 75%;
+	  height: 5px;
+	  opacity: 0.6;
+	  margin: auto;
+	  border-radius: 5px;
+  }
+  
+  .sub-title {
+	text-align: center;
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	color: #eeeeee;
+  }
+
+  .slogan-title {
+	text-align: center;
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	color: #eeeeee;
+  }
+  
+  /* container-holder */
+  .content-holder {
+	width: 50%;
+	background: #e8eaf66f;
+	border-radius: 5px;
+	padding: 30px;
+	box-sizing: border-box;
+  }
+
+  .content-holder .row{
+	  padding: 0!important;
+	  margin-bottom: 0!important;
+  }
+
+  .content-holder .btn-large{
+	  background-color: #232741!important;
+	  border-radius: 50px;
+	  font-weight: bold;
+	  font-family: "Poppins";
+  }
+  
+  .shapeTop,
+  .shapeBottom {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+  }
+  
+  .shapeTop {
+	top: -20px;
+	right: -20px;
+	opacity: 0.8;
+	background-color: #e3f2fd;
+  }
+  
+  .shapeBottom {
+	width: 150px;
+	height: 150px;
+	left: -20px;
+	bottom: -20px;
+	opacity: 0.7;
+	background-color: #0d47a1;
+  }
+  
+  .login-holder {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 40%;
+	background: none;
+	border-radius: 5px;
+	padding: 30px;
+	box-sizing: border-box;
+  }
+  
+  .login-box {
+	background: rgba(255, 255, 255, 0.24);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(4.9px);
+	-webkit-backdrop-filter: blur(4.9px);
+  }
+  
+  .input-field label {
+	font-family: "Lato";
+	font-weight: bold;
+  
+	color: #fff;
+  }
+  
+  .input-field input[type="text"]:focus + label {
+	color: #fff;
+  }
+  
+  .input-field input[type="text"] .validate {
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 1px 0 0 #fff;
+  }
+  
+  .input-field input[type="text"].valid,
+  .input-field input[type="password"].valid {
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 1px 0 0 #fff;
+  }
+  
+  input {
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 1px 0 0 #fff;
+  }
+  
+  /* valid color */
+  .input-field input[type="text"],
+  .input-field input[type="password"] {
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 1px 0 0 #fff;
+  }
+  /* invalid color */
+  .input-field input[type="text"]:focus {
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 1px 0 0 #fff;
+  }
+  
+  .active {
+	color: #fff;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+	color: #fff;
+  }
+  
+  .insert-box h4 {
+	color: #fff;
+	font-family: "Poppins";
+	letter-spacing: 0.2em;
+	font-weight: bold;
+  }
+  
+  .insert-box .btn {
+	background-color: #2962ff;
+  }
+  
+  .form-title {
+	color: #7986cb;
+	font-weight: bolder;
+	font-family: "Lato", sans-serif;
+	font-size: 3em;
+  }
+  
+  .button-row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .button-row .btn-large {
+	background-color: #2962ff;
+  }
+  
+  .card .card-title {
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	font-size: 25px;
+	font-family: "Josefin Sans";
+	color: #e0f2f1;
+  }
+  
+  .card p {
+	padding: 5px 0px 5px 0px;
+	font-weight: bold;
+	font-family: "Poppins";
+	color: rgba(255, 255, 255, 0.5);
+	letter-spacing: 0.1em;
+  }
+  
+  .card .user-data {
+	color: rgba(255, 255, 255, 1);
+	opacity: 1;
+	font-weight: 800;
+	font-weight: normal;
+  }
